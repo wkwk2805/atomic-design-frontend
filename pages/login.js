@@ -1,8 +1,8 @@
 import React from "react";
 import Login from "../templates/Login";
 
-const index = () => {
+const login = () => {
   return <Login />;
 };
 
-export default index;
+export default login;

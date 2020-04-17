@@ -1,0 +1,66 @@
+import React from "react";
+import GridList from "@material-ui/core/GridList";
+import GridListTile from "@material-ui/core/GridListTile";
+import { GridListTileBar } from "@material-ui/core";
+import { VideocamOutlined, CropOriginal } from "@material-ui/icons";
+import { useSelector } from "react-redux";
+import { useEffect } from "react";
+
+const tileData = [
+  { type: "picture", img: "/images/sample2.jpg" },
+  { type: "video", img: "/images/sample2.jpg" },
+  { type: "picture", img: "/images/sample2.jpg" },
+  { type: "picture", img: "/images/sample2.jpg" },
+  { type: "video", img: "/images/sample2.jpg" },
+];
+
+const ExploreBody = (/* { tileData } */) => {
+  //   const windowSize = useSelector((state) => state.size);
+  const windowSize = { x: 320 };
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexWrap: "wrap",
+        justifyContent: "space",
+        overflow: "hidden",
+      }}
+    >
+      <GridList
+        cellHeight={windowSize.x / 3}
+        cols={
+          tileData.length > 3 || tileData.length % 3 === 0 ? 3 : tileData.length
+        }
+      >
+        {tileData.map((tile, index) => (
+          <GridListTile
+            key={index}
+            cols={tile.cols || 1}
+            style={{ padding: 0.5 }}
+          >
+            <img src={tile.img} alt={tile.title} />
+            <GridListTileBar
+              titlePosition="top"
+              actionIcon={
+                tile.type === "video" ? (
+                  <VideocamOutlined style={{ color: "white", padding: 3 }} />
+                ) : (
+                  <CropOriginal style={{ color: "white", padding: 3 }} />
+                )
+              }
+              style={{
+                background:
+                  "linear-gradient(to bottom, rgba(0,0,0,0) 0%, " +
+                  "rgba(0,0,0,0) 70%, rgba(0,0,0,0) 100%)",
+                height: 30,
+              }}
+              actionPosition="right"
+            />
+          </GridListTile>
+        ))}
+      </GridList>
+    </div>
+  );
+};
+
+export default ExploreBody;
