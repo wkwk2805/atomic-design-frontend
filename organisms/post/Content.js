@@ -36,7 +36,7 @@ const Content = ({ image }) => {
         }}
       />
       <CardContent style={{ padding: 10 }}>
-        <Typography variant="body2" color="textSecondary" component="p">
+        <Typography variant="body2" color="textSecondary" component="div">
           <div style={{ marginBottom: 5 }}>
             <LikeTextButton />
             <CommentTextButton />

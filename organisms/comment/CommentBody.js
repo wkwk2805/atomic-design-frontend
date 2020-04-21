@@ -5,7 +5,7 @@ import CommentInfo from "../../molecules/Information/CommentInfo";
 const CommentBody = () => {
   return (
     <>
-      <CommentInfo />
+      <CommentInfo user="TEST1" comment="댓글내용입니다." />
       <CommentInput />
     </>
   );

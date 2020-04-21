@@ -16,27 +16,30 @@ const CommentInfo = ({ user, comment, image }) => {
         }}
         src={image}
       />
-      <Typography
-        variant="caption"
-        color="textSecondary"
-        component="span"
-        style={{ verticalAlign: "middle" }}
-      >
-        {user}
-      </Typography>
-      {`  `}
-      <Typography
-        variant="caption"
-        color="textSecondary"
-        component="span"
-        style={{ verticalAlign: "middle" }}
-      >
-        {comment}
-      </Typography>
-      <LikeButton
-        style={{ padding: 10, margin: -10, float: "right" }}
-        fontSize={20}
-      />
+      <div style={{ marginLeft: 30 }}>
+        <Typography
+          variant="caption"
+          color="textSecondary"
+          component="span"
+          style={{ verticalAlign: "middle" }}
+        >
+          {user}
+        </Typography>
+        {`  `}
+        <Typography
+          variant="caption"
+          color="textSecondary"
+          component="span"
+          style={{ verticalAlign: "middle" }}
+        >
+          {comment}
+        </Typography>
+
+        <LikeButton
+          style={{ padding: 10, margin: -10, float: "right" }}
+          fontSize={20}
+        />
+      </div>
     </div>
   );
 };
