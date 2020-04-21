@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, Profiler } from "react";
 import {
   PostAdd,
   MailOutline,
@@ -13,6 +13,8 @@ import {
 } from "@material-ui/core";
 import Post from "../templates/Post";
 import Explore from "../templates/Explore";
+import Notifications from "../templates/Notifications";
+import Profile from "../templates/Profile";
 
 const Nav = ({ setView }) => {
   const stylesIcon = { minWidth: 0, paddingBottom: 0, paddingTop: 0 };
@@ -45,10 +47,10 @@ const Nav = ({ setView }) => {
                 setView(<Post />);
                 break;
               case 3:
-                setView("");
+                setView(<Notifications />);
                 break;
               case 4:
-                setView("");
+                setView(<Profile />);
                 break;
               default:
                 setView(<Post />);

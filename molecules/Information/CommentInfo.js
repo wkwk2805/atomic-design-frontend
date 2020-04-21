@@ -5,36 +5,26 @@ import LikeButton from "../../atoms/LikeButton";
 
 const CommentInfo = ({ user, comment, image }) => {
   return (
-    <div style={{ marginTop: 8, marginBottom: 5 }}>
+    <div style={{ marginTop: 5, marginBottom: 5 }}>
       <Avatar
         style={{
           backgroundColor: red[500],
           width: 20,
           height: 20,
           float: "left",
+          marginTop: 3,
           marginRight: 5,
         }}
         src={image}
       />
       <div style={{ marginLeft: 30 }}>
-        <Typography
-          variant="caption"
-          color="textSecondary"
-          component="span"
-          style={{ verticalAlign: "middle" }}
-        >
+        <Typography variant="caption" component="span">
           {user}
         </Typography>
         {`  `}
-        <Typography
-          variant="caption"
-          color="textSecondary"
-          component="span"
-          style={{ verticalAlign: "middle" }}
-        >
+        <Typography variant="caption" component="span">
           {comment}
         </Typography>
-
         <LikeButton
           style={{ padding: 10, margin: -10, float: "right" }}
           fontSize={20}
