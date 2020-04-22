@@ -1,18 +1,11 @@
 import React, { useState } from "react";
-import {
-  AppBar,
-  Typography,
-  Toolbar,
-  IconButton,
-  Paper,
-} from "@material-ui/core";
-import { PersonAdd, Group, CropFree } from "@material-ui/icons";
+import { AppBar, Typography, Toolbar, Paper } from "@material-ui/core";
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
 import GroupInfo from "../../molecules/Information/GroupInfo";
 import GroupButton from "../../atoms/GroupButton";
-import FriendAddButton from "../../atoms/FriendAddButton";
 import ShowGroupsButton from "../../atoms/ShowGroupsButton";
+import FriendButton from "../../atoms/FriendButton";
 // import { showLoading } from "../../modules/loading";
 
 const PostHeader = () => {
@@ -24,7 +17,7 @@ const PostHeader = () => {
   };
   const moveFriendList = () => {
     // dispatch(showLoading());
-    router.push("/");
+    router.push("/friends");
   };
   const moveGroupList = () => {
     // dispatch(showLoading());
@@ -40,13 +33,9 @@ const PostHeader = () => {
           }}
         >
           <Typography>Logo Space</Typography>
-          <div style={{ position: "absolute", right: 20 }}>
+          <div style={{ position: "absolute", right: 10 }}>
             <GroupButton edge="end" color="inherit" onClick={groupToggle} />
-            <FriendAddButton
-              edge="end"
-              color="inherit"
-              onClick={moveFriendList}
-            />
+            <FriendButton edge="end" color="inherit" onClick={moveFriendList} />
           </div>
         </Toolbar>
         {groupView && (

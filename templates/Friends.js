@@ -1,7 +1,14 @@
 import React from "react";
+import FriendsHeader from "../organisms/friends/FriendsHeader";
+import FriendsBody from "../organisms/friends/FriendsBody";
 
 const Friends = () => {
-  return <div></div>;
+  return (
+    <>
+      <FriendsHeader />
+      <FriendsBody />
+    </>
+  );
 };
 
 export default Friends;

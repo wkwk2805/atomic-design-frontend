@@ -6,7 +6,6 @@ const CommentBody = () => {
   return (
     <>
       <CommentInfo user="TEST1" comment="댓글내용입니다." />
-      <CommentInput />
     </>
   );
 };
