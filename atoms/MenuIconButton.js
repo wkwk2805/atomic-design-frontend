@@ -2,47 +2,24 @@ import React from "react";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
-import MoreVertIcon from "@material-ui/icons/MoreVert";
+import BorderColor from "@material-ui/icons/BorderColor";
 
-const options = ["글수정", "글삭제"];
-
-const MenuIconButton = () => {
+const MenuIconButton = (/* { options } */) => {
+  const options = ["글수정", "글삭제"];
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
-
   const handleClick = (event) => {
     setAnchorEl(event.currentTarget);
   };
-
   const handleClose = () => {
     setAnchorEl(null);
   };
-
   return (
-    <span
-      style={{
-        display: "inline-block",
-        float: "right",
-        padding: 12,
-        paddingBottom: 0,
-      }}
-    >
-      <IconButton
-        aria-label="more"
-        aria-controls="long-menu"
-        aria-haspopup="true"
-        onClick={handleClick}
-        style={{ padding: 0, verticalAlign: "baseline" }}
-      >
-        <MoreVertIcon />
+    <>
+      <IconButton onClick={handleClick} style={{ padding: 10, margin: -10 }}>
+        <BorderColor style={{ fontSize: 18 }} />
       </IconButton>
-      <Menu
-        id="long-menu"
-        anchorEl={anchorEl}
-        keepMounted
-        open={open}
-        onClose={handleClose}
-      >
+      <Menu anchorEl={anchorEl} keepMounted open={open} onClose={handleClose}>
         {options.map((option) => (
           <MenuItem
             key={option}
@@ -53,7 +30,7 @@ const MenuIconButton = () => {
           </MenuItem>
         ))}
       </Menu>
-    </span>
+    </>
   );
 };
 export default MenuIconButton;

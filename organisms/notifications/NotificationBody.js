@@ -12,7 +12,7 @@ const NotificationBody = () => {
       <div style={container}>이번달</div>
       <NotificationInfo message="test1님이 어떠한 행동을 했습니다" />
       <NotificationInfo message="test1님이 어떠한 행동을 했습니다" />
-      <div style={container}>이전활동</div>
+      <div style={container}>이전알림</div>
       <NotificationInfo message="test1님이 어떠한 행동을 했습니다" />
       <NotificationInfo message="test1님이 어떠한 행동을 했습니다" />
       <NotificationInfo message="test1님이 어떠한 행동을 했습니다" />

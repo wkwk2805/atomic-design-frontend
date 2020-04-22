@@ -16,6 +16,7 @@ import DownButton from "../../atoms/DownButton";
 import InputText from "../../atoms/InputText";
 import PostCommentInput from "../../molecules/Form/PostCommentInput";
 import { useRouter } from "next/router";
+import MenuIconButton from "../../atoms/MenuIconButton";
 
 const Content = ({ image }) => {
   const router = useRouter();
@@ -41,6 +42,9 @@ const Content = ({ image }) => {
             <LikeTextButton />
             <CommentTextButton />
             <ShareTextButton />
+            <div style={{ float: "right", display: "inline-block" }}>
+              <MenuIconButton />
+            </div>
           </div>
           <div>컨텐츠</div>
         </Typography>

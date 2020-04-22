@@ -11,7 +11,7 @@ const NotificationHeader = () => {
             backgroundColor: "#0f4c81",
           }}
         >
-          <Typography component="div">활동</Typography>
+          <Typography component="div">알림</Typography>
         </Toolbar>
       </AppBar>
       <div style={{ marginTop: 60 }}></div>
