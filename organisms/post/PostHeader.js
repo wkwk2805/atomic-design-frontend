@@ -39,16 +39,26 @@ const PostHeader = () => {
           </div>
         </Toolbar>
         {groupView && (
-          <Paper variant="outlined" style={{ overflow: "auto" }} square>
+          <Paper
+            variant="outlined"
+            style={{ overflow: "auto", display: "flex", flexDirection: "row" }}
+            square
+          >
             <ShowGroupsButton
               onClick={moveGroupList}
-              style={{ margin: -5, padding: 5, position: "absolute", right: 0 }}
+              style={{
+                margin: -5,
+                padding: 5,
+                position: "absolute",
+                right: 0,
+                zIndex: 1,
+              }}
             />
-            <GroupInfo name="그룹1" image="sample.jpg" active />
+            <GroupInfo name="모두" image="sample.jpg" active />
           </Paper>
         )}
       </AppBar>
-      <div style={{ marginTop: 60 + (groupView && 70) }}></div>
+      <div style={{ marginTop: 60 + (groupView && 85) }}></div>
     </>
   );
 };

@@ -1,4 +1,4 @@
-import React, { useState, Profiler } from "react";
+import React, { useState } from "react";
 import {
   PostAdd,
   MailOutline,

@@ -7,10 +7,11 @@ const GroupInfo = ({ name, image, active }) => {
     <span
       style={{
         padding: 10,
+        paddingTop: 5,
         paddingBottom: 5,
-        width: 50,
-        textAlign: "center",
-        display: "table-cell",
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
       }}
     >
       <Avatar
@@ -18,12 +19,11 @@ const GroupInfo = ({ name, image, active }) => {
         src={`/images/${image}`}
         style={{
           border: `1.8px solid ${active ? red[300] : "grey"}`,
-          alignSelf: "center",
-          width: 40,
-          height: 40,
+          width: 60,
+          height: 60,
         }}
       />
-      <div style={{ fontSize: 11, display: "block" }}>{name}</div>
+      <div style={{ fontSize: 10 }}>{name}</div>
     </span>
   );
 };

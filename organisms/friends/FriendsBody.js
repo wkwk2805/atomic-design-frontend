@@ -23,8 +23,8 @@ const FriendsBody = () => {
       >
         친구 신청한 친구
       </Typography>
-      <PersonInfo name="Test1" message="하이루" />
-      <PersonInfo name="Test1" message="하이루" />
+      <PersonInfo name="Test1" message="하이루" newfriend />
+      <PersonInfo name="Test1" message="하이루" newfriend />
       <Typography
         variant="caption"
         component="div"

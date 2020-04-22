@@ -1,10 +1,17 @@
 import React, { useState } from "react";
-import { AppBar, Toolbar, Typography } from "@material-ui/core";
+import {
+  AppBar,
+  Toolbar,
+  Typography,
+  Paper,
+  InputBase,
+} from "@material-ui/core";
 import BackButton from "../../atoms/BackButton";
 import FriendAddButton from "../../atoms/FriendAddButton";
 import SearchButton from "../../atoms/SearchButton";
 
 const FriendsHeader = () => {
+  const [search, setSearch] = useState(false);
   return (
     <>
       <AppBar position="fixed">
@@ -24,14 +31,30 @@ const FriendsHeader = () => {
           />
           <Typography component="div">친구</Typography>
           <div style={{ right: 10, position: "absolute" }}>
-            <SearchButton style={{ color: "white", padding: 10, margin: -5 }} />
+            <SearchButton
+              style={{ color: "white", padding: 10, margin: -5 }}
+              onClick={() => setSearch(!search)}
+            />
             <FriendAddButton
               style={{ color: "white", padding: 10, margin: -5 }}
             />
           </div>
         </Toolbar>
+        {search && (
+          <Paper variant="outlined" style={{ overflow: "auto" }} square>
+            <InputBase
+              placeholder="검색"
+              style={{
+                paddingLeft: 10,
+                fontSize: 12,
+                borderRadius: 5,
+                width: "100%",
+              }}
+            />
+          </Paper>
+        )}
       </AppBar>
-      <div style={{ marginTop: 60 }}></div>
+      <div style={{ marginTop: 60 + (search && 25) }}></div>
     </>
   );
 };
