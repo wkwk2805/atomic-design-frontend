@@ -8,8 +8,8 @@ const InputText = (props) => {
       size="small"
       fullWidth
       style={{ marginTop: 10 }}
-      error={props.isErr}
-      helperText={props.isErr && `유효하지 않습니다!`}
+      error={props.error}
+      helperText={props.error && `유효하지 않습니다!`}
     />
   );
 };

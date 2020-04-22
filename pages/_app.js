@@ -2,8 +2,9 @@ import React, { useEffect, useState } from "react";
 import rootReducer from "../modules";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
+import { composeWithDevTools } from "redux-devtools-extension";
 
-const store = createStore(rootReducer);
+const store = createStore(rootReducer, composeWithDevTools);
 
 const AppWithRedux = ({ Component, pageProps }) => {
   const [isMobile, setIsMobile] = useState(false);

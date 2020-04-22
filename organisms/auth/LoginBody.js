@@ -12,8 +12,8 @@ const LoginBody = () => {
       <div style={{ textAlign: "center", marginTop: 100 }}>
         <img src="/images/sample.jpg" alt="" width="200" />
       </div>
-      <InputText label="아이디" isErr={false} />
-      <InputText label="비밀번호" type="password" isErr={false} />
+      <InputText label="아이디" error={false} />
+      <InputText label="비밀번호" type="password" error={false} />
       <div style={{ textAlign: "center", margin: 10 }}>
         <SubmitButton
           text="로그인"
