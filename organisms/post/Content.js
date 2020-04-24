@@ -6,6 +6,7 @@ import {
   CardMedia,
   CardContent,
   Typography,
+  InputBase,
 } from "@material-ui/core";
 import CountImages from "../../atoms/CountImages";
 import CommentTextButton from "../../molecules/Form/CommentTextButton";
@@ -17,6 +18,13 @@ import InputText from "../../atoms/InputText";
 import PostCommentInput from "../../molecules/Form/PostCommentInput";
 import { useRouter } from "next/router";
 import MenuIconButton from "../../atoms/MenuIconButton";
+import AvartarText from "../../molecules/AvartarText";
+import AddButton from "../../atoms/AddButton";
+import LikeButton from "../../atoms/LikeButton";
+import IconTextButton from "../../molecules/IconTextButton";
+import CommentButton from "../../atoms/CommentButton";
+import ShareButton from "../../atoms/ShareButton";
+import { BorderColor } from "@material-ui/icons";
 
 const Content = ({ image }) => {
   const router = useRouter();
@@ -38,17 +46,53 @@ const Content = ({ image }) => {
       />
       <CardContent style={{ padding: 10 }}>
         <Typography variant="body2" color="textSecondary" component="div">
-          <div style={{ marginBottom: 5 }}>
-            <LikeTextButton />
-            <CommentTextButton />
-            <ShareTextButton />
-            <div style={{ float: "right", display: "inline-block" }}>
-              <MenuIconButton />
+          <div style={{ marginBottom: 5, display: "flex" }}>
+            <div style={{ display: "flex", flex: 1 }}>
+              <IconTextButton
+                iconButton={<LikeButton style={{ margin: -10, padding: 10 }} />}
+                number={3}
+                numberStyle={{ fontSize: 12, marginLeft: 5, marginRight: 5 }}
+              />
+              <IconTextButton
+                iconButton={
+                  <CommentButton style={{ margin: -10, padding: 10 }} />
+                }
+                number={3}
+                numberStyle={{ fontSize: 12, marginLeft: 5, marginRight: 5 }}
+              />
+              <IconTextButton
+                iconButton={
+                  <ShareButton style={{ margin: -10, padding: 10 }} />
+                }
+                number={3}
+                numberStyle={{ fontSize: 12, marginLeft: 5, marginRight: 5 }}
+              />
+            </div>
+            <div>
+              <MenuIconButton
+                options={["글수정", "글삭제"]}
+                iconButtonStyle={{ padding: 10, margin: -10 }}
+                iconButton={<BorderColor style={{ fontSize: 20 }} />}
+                menuStyle={{
+                  fontSize: 12,
+                  minHeight: 0,
+                }}
+              />
             </div>
           </div>
           <div>컨텐츠</div>
         </Typography>
-        <CommentInfo user="아이디(이름)" comment="댓글의 내용입니다." />
+        <AvartarText
+          name="아이디(이름)"
+          content="댓글의 내용입니다."
+          size={20}
+          image="https://miro.medium.com/max/1024/1*m2fb_YCpY3WUJxKNUjLPdA.png"
+          contentStyle={{ marginLeft: 10, fontSize: 12 }}
+          nameStyle={{ marginLeft: 10, fontSize: 12 }}
+          iconButton={
+            <LikeButton style={{ margin: -10, padding: 10 }} fontSize={20} />
+          }
+        />
         <Typography
           variant="caption"
           color="textSecondary"
@@ -61,7 +105,20 @@ const Content = ({ image }) => {
             onClick={() => router.push("/comment")}
           />
         </Typography>
-        <PostCommentInput />
+        <AvartarText
+          content={
+            <InputBase
+              placeholder="댓글을 넣어주세요"
+              style={{ fontSize: 12, width: "100%" }}
+            />
+          }
+          size={20}
+          image="https://miro.medium.com/max/1024/1*m2fb_YCpY3WUJxKNUjLPdA.png"
+          contentStyle={{ marginLeft: 10, width: "90%" }}
+          iconButton={
+            <AddButton style={{ margin: -10, padding: 10 }} fontSize={20} />
+          }
+        />
       </CardContent>
     </Card>
   );

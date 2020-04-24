@@ -5,7 +5,7 @@ import { Add } from "@material-ui/icons";
 const AddButton = (props) => {
   return (
     <IconButton {...props}>
-      <Add />
+      <Add style={{ fontSize: props.fontSize }} />
     </IconButton>
   );
 };
