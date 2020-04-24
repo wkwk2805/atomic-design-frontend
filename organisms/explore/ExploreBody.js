@@ -5,7 +5,7 @@ import { GridListTileBar } from "@material-ui/core";
 import { VideocamOutlined, CropOriginal } from "@material-ui/icons";
 import { useSelector } from "react-redux";
 import { useEffect } from "react";
-import ListView from "../../molecules/Information/ListView";
+import ListView from "../../molecules/ListView";
 
 const tileData = [
   { type: "picture", img: "/images/sample2.jpg" },

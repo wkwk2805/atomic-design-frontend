@@ -1,5 +1,5 @@
 import React from "react";
-import SearchInput from "../../molecules/Form/SearchInput";
+import SearchInput from "../../molecules/SearchInput";
 import { AppBar, Toolbar } from "@material-ui/core";
 
 const ExploreHeader = () => {

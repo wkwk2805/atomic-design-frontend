@@ -1,6 +1,6 @@
 import React from "react";
 import { InputBase } from "@material-ui/core";
-import SearchButton from "../../atoms/SearchButton";
+import SearchButton from "../atoms/SearchButton";
 
 const SearchInput = () => {
   return (

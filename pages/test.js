@@ -1,13 +1,14 @@
 import React from "react";
-import IconTextButton from "../molecules/IconTextButton";
-import LikeButton from "../atoms/LikeButton";
+import AvartarTextVertical from "../molecules/AvartarTextVertical";
 
 const test = () => {
   return (
-    <IconTextButton
-      iconButton={<LikeButton style={{ margin: -10, padding: 10 }} />}
-      number={3}
-      numberStyle={{ fontSize: 12, marginLeft: 5 }}
+    <AvartarTextVertical
+      name="Test1"
+      content="test is test"
+      nameStyle={{ marginTop: 5 }}
+      contentStyle={{ marginTop: 5 }}
+      size={30}
     />
   );
 };

@@ -11,7 +11,7 @@ import {
 import CountImages from "../../atoms/CountImages";
 import DownButton from "../../atoms/DownButton";
 import { useRouter } from "next/router";
-import MenuIconButton from "../../atoms/MenuIconButton";
+import MenuIconButton from "../../molecules/MenuIconButton";
 import AvartarText from "../../molecules/AvartarText";
 import AddButton from "../../atoms/AddButton";
 import LikeButton from "../../atoms/LikeButton";

@@ -1,5 +1,5 @@
 import React from "react";
-import PersonInfo from "../../molecules/Information/PersonInfo";
+import PersonInfo from "../../molecules/PersonInfo";
 import { Typography } from "@material-ui/core";
 
 const FriendsBody = () => {

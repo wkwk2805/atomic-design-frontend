@@ -1,7 +1,7 @@
 import React from "react";
 import { Avatar, Typography } from "@material-ui/core";
-import SubmitButton from "../../atoms/SubmitButton";
-import CancelButton from "../../atoms/CancelButton";
+import SubmitButton from "../atoms/SubmitButton";
+import CancelButton from "../atoms/CancelButton";
 import { red } from "@material-ui/core/colors";
 
 const PersonInfo = ({ name, message, image, newfriend }) => {

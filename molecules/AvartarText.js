@@ -9,6 +9,7 @@ const AvartarText = ({
   nameStyle,
   contentStyle,
   iconButton,
+  avartarStyle,
 }) => {
   return (
     <div
@@ -28,7 +29,10 @@ const AvartarText = ({
         }}
       >
         <div>
-          <Avatar style={{ width: size, height: size }} src={image} />
+          <Avatar
+            style={{ width: size, height: size, ...avartarStyle }}
+            src={image}
+          />
         </div>
         <div style={nameStyle}>{name}</div>
         <div style={contentStyle}>{content}</div>

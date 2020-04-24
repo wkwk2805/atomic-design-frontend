@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import { AppBar, Typography, Toolbar, Paper } from "@material-ui/core";
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
-import GroupInfo from "../../molecules/Information/GroupInfo";
 import GroupButton from "../../atoms/GroupButton";
 import ShowGroupsButton from "../../atoms/ShowGroupsButton";
 import FriendButton from "../../atoms/FriendButton";
+import AvartarTextVertical from "../../molecules/AvartarTextVertical";
 // import { showLoading } from "../../modules/loading";
 
 const PostHeader = () => {
@@ -54,7 +54,21 @@ const PostHeader = () => {
                 zIndex: 1,
               }}
             />
-            <GroupInfo name="모두" image="sample.jpg" active />
+            <AvartarTextVertical
+              name="내그룹이름을소개합니다"
+              image="/images/sample.jpg"
+              containerStyle={{ margin: 5 }}
+              size={60}
+              nameStyle={{
+                width: 100,
+                fontSize: 11,
+                textOverflow: "ellipsis",
+                overflow: "hidden",
+                whiteSpace: "nowrap",
+                textAlign: "center",
+              }}
+              avartarStyle={{ border: "2px solid red" }}
+            />
           </Paper>
         )}
       </AppBar>
