@@ -1,5 +1,4 @@
 import React from "react";
-import NotificationInfo from "../../molecules/Information/NotificationInfo";
 import AvartarText from "../../molecules/AvartarText";
 
 const NotificationBody = () => {

@@ -9,13 +9,7 @@ import {
   InputBase,
 } from "@material-ui/core";
 import CountImages from "../../atoms/CountImages";
-import CommentTextButton from "../../molecules/Form/CommentTextButton";
-import LikeTextButton from "../../molecules/Form/LikeTextButton";
-import ShareTextButton from "../../molecules/Form/ShareTextButton";
-import CommentInfo from "../../molecules/Information/CommentInfo";
 import DownButton from "../../atoms/DownButton";
-import InputText from "../../atoms/InputText";
-import PostCommentInput from "../../molecules/Form/PostCommentInput";
 import { useRouter } from "next/router";
 import MenuIconButton from "../../atoms/MenuIconButton";
 import AvartarText from "../../molecules/AvartarText";

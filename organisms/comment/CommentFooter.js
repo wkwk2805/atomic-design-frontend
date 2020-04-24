@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import CommentInput from "../../molecules/Form/CommentInput";
 import { Button, InputBase, Avatar } from "@material-ui/core";
 import AvartarText from "../../molecules/AvartarText";
 
