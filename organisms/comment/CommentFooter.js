@@ -42,35 +42,30 @@ const CommentFooter = () => {
           </div>
         </div>
         {/* 답글일 경우에만 나오도록 처리 끝*/}
-        <div style={{ display: "flex" }}>
-          <div style={{ flex: 1 }}>
-            <AvartarText
-              size={20}
-              content={
-                <InputBase
-                  placeholder="댓글을 달아주세요"
-                  style={{ color: "white", fontSize: 12, width: "90%" }}
-                  onChange={(e) => setComment(e.target.value)}
-                  value={comment}
-                />
-              }
-              contentStyle={{ marginLeft: 10, width: "90%" }}
+        <AvartarText
+          size={20}
+          content={
+            <InputBase
+              placeholder="댓글을 달아주세요"
+              style={{ color: "white", fontSize: 12, width: "90%" }}
+              onChange={(e) => setComment(e.target.value)}
+              value={comment}
             />
-          </div>
-          <div>
+          }
+          contentStyle={{ marginLeft: 10, width: "90%" }}
+          iconButton={
             <Button
               style={{
                 fontSize: 12,
                 padding: 0,
                 minWidth: 0,
-                alignSelf: "center",
                 color: "white",
               }}
             >
               게시
             </Button>
-          </div>
-        </div>
+          }
+        />
       </div>
     </>
   );
