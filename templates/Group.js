@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 
 const Group = () => {
   return <div></div>;
 };
 
-export default Group;
+export default memo(Group);

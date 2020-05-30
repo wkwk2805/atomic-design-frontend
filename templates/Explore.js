@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import ExploreBody from "../organisms/explore/ExploreBody";
 import ExploreHeader from "../organisms/explore/ExploreHeader";
 
@@ -11,4 +11,4 @@ const Explore = () => {
   );
 };
 
-export default Explore;
+export default memo(Explore);

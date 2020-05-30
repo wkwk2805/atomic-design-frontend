@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, memo } from "react";
 import rootReducer from "../modules";
 import { Provider } from "react-redux";
 import { createStore } from "redux";
@@ -25,4 +25,4 @@ const AppWithRedux = ({ Component, pageProps }) => {
   );
 };
 
-export default AppWithRedux;
+export default memo(AppWithRedux);

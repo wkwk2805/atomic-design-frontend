@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Avatar, Typography } from "@material-ui/core";
 import SubmitButton from "../atoms/SubmitButton";
 import CancelButton from "../atoms/CancelButton";
@@ -51,4 +51,4 @@ const PersonInfo = ({ name, message, image, newfriend }) => {
   );
 };
 
-export default PersonInfo;
+export default memo(PersonInfo);

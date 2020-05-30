@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { InputBase } from "@material-ui/core";
 import SearchButton from "../atoms/SearchButton";
 
@@ -30,4 +30,4 @@ const SearchInput = () => {
   );
 };
 
-export default SearchInput;
+export default memo(SearchInput);

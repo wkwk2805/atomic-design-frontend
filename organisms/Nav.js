@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import {
   PostAdd,
   MailOutline,
@@ -89,4 +89,4 @@ const Nav = ({ setView }) => {
   );
 };
 
-export default Nav;
+export default memo(Nav);

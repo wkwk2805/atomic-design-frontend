@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Button } from "@material-ui/core";
 
 const SubmitButton = (props) => {
@@ -9,4 +9,4 @@ const SubmitButton = (props) => {
   );
 };
 
-export default SubmitButton;
+export default memo(SubmitButton);

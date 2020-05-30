@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import LogoutButton from "../../atoms/LogoutButton";
 
@@ -23,4 +23,4 @@ const ProfileHeader = () => {
   );
 };
 
-export default ProfileHeader;
+export default memo(ProfileHeader);

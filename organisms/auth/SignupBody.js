@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import InputText from "../../atoms/InputText";
 import { Container } from "@material-ui/core";
 import SubmitButton from "../../atoms/SubmitButton";
@@ -33,4 +33,4 @@ const SignupBody = () => {
   );
 };
 
-export default SignupBody;
+export default memo(SignupBody);

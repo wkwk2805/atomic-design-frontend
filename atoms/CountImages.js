@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const CountImages = ({ total, current }) => {
   return (
@@ -19,4 +19,4 @@ const CountImages = ({ total, current }) => {
   );
 };
 
-export default CountImages;
+export default memo(CountImages);

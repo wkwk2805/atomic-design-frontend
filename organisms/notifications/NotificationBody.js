@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import AvartarText from "../../molecules/AvartarText";
 
 const NotificationBody = () => {
@@ -61,4 +61,4 @@ const NotificationBody = () => {
   );
 };
 
-export default NotificationBody;
+export default memo(NotificationBody);

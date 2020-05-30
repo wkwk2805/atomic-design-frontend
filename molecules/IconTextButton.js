@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 
 const IconTextButton = ({ iconButton, number, numberStyle }) => {
   return (
@@ -11,4 +11,4 @@ const IconTextButton = ({ iconButton, number, numberStyle }) => {
   );
 };
 
-export default IconTextButton;
+export default memo(IconTextButton);

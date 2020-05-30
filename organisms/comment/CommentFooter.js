@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { Button, InputBase, Avatar } from "@material-ui/core";
 import AvartarText from "../../molecules/AvartarText";
 
@@ -70,4 +70,4 @@ const CommentFooter = () => {
   );
 };
 
-export default CommentFooter;
+export default memo(CommentFooter);

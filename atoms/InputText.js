@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { TextField } from "@material-ui/core";
 
 const InputText = (props) => {
@@ -14,4 +14,4 @@ const InputText = (props) => {
   );
 };
 
-export default InputText;
+export default memo(InputText);

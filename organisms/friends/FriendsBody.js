@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import PersonInfo from "../../molecules/PersonInfo";
 import { Typography } from "@material-ui/core";
 
@@ -46,4 +46,4 @@ const FriendsBody = () => {
   );
 };
 
-export default FriendsBody;
+export default memo(FriendsBody);

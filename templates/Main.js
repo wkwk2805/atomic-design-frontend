@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import Nav from "../organisms/Nav";
 import Post from "./Post";
 
@@ -13,4 +13,4 @@ const Main = () => {
   );
 };
 
-export default Main;
+export default memo(Main);

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { IconButton } from "@material-ui/core";
 import { Close } from "@material-ui/icons";
 
@@ -10,4 +10,4 @@ const CancelButton = (props) => {
   );
 };
 
-export default CancelButton;
+export default memo(CancelButton);

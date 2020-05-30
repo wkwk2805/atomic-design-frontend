@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { IconButton } from "@material-ui/core";
 import { Share } from "@material-ui/icons";
 
@@ -10,4 +10,4 @@ const ShareButton = (props) => {
   );
 };
 
-export default ShareButton;
+export default memo(ShareButton);

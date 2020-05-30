@@ -1,8 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import Signup from "../templates/Signup";
 
 const signup = () => {
   return <Signup />;
 };
 
-export default signup;
+export default memo(signup);

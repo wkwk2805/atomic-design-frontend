@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import CommentHeader from "../organisms/comment/CommentHeader";
 import CommentBody from "../organisms/comment/CommentBody";
 import CommentFooter from "../organisms/comment/CommentFooter";
@@ -13,4 +13,4 @@ const Comment = () => {
   );
 };
 
-export default Comment;
+export default memo(Comment);

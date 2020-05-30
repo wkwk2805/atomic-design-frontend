@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 import BackButton from "../../atoms/BackButton";
 import EditButton from "../../atoms/EditButton";
@@ -37,4 +37,4 @@ const CommentHeader = () => {
   );
 };
 
-export default CommentHeader;
+export default memo(CommentHeader);

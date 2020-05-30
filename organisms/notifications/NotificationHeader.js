@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { AppBar, Toolbar, Typography } from "@material-ui/core";
 
 const NotificationHeader = () => {
@@ -19,4 +19,4 @@ const NotificationHeader = () => {
   );
 };
 
-export default NotificationHeader;
+export default memo(NotificationHeader);

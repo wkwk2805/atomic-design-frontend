@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { IconButton } from "@material-ui/core";
 import { ArrowBack } from "@material-ui/icons";
 import { useRouter } from "next/router";
@@ -12,4 +12,4 @@ const BackButton = (props) => {
   );
 };
 
-export default BackButton;
+export default memo(BackButton);

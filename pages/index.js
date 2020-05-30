@@ -1,8 +1,8 @@
-import React from "react";
+import React, { memo } from "react";
 import Login from "../templates/Login";
 
 const index = () => {
   return <Login />;
 };
 
-export default index;
+export default memo(index);

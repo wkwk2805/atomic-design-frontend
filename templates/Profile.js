@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import ProfileHeader from "../organisms/profile/ProfileHeader";
 import ProfileBody from "../organisms/profile/ProfileBody";
 
@@ -11,4 +11,4 @@ const Profile = () => {
   );
 };
 
-export default Profile;
+export default memo(Profile);

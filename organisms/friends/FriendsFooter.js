@@ -1,7 +1,7 @@
-import React from "react";
+import React, { memo } from "react";
 
 const FriendsFooter = () => {
   return <div></div>;
 };
 
-export default FriendsFooter;
+export default memo(FriendsFooter);

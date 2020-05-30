@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import NotificationHeader from "../organisms/notifications/NotificationHeader";
 import NotificationBody from "../organisms/notifications/NotificationBody";
 
@@ -11,4 +11,4 @@ const Notifications = () => {
   );
 };
 
-export default Notifications;
+export default memo(Notifications);

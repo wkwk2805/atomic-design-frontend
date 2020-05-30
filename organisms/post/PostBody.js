@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Content from "./Content";
 
 const PostBody = () => {
@@ -11,4 +11,4 @@ const PostBody = () => {
   );
 };
 
-export default PostBody;
+export default memo(PostBody);

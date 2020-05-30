@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, memo } from "react";
 import { AppBar, Typography, Toolbar, Paper } from "@material-ui/core";
 import { useRouter } from "next/router";
 import { useDispatch } from "react-redux";
@@ -77,4 +77,4 @@ const PostHeader = () => {
   );
 };
 
-export default PostHeader;
+export default memo(PostHeader);

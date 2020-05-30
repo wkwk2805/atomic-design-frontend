@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { Avatar } from "@material-ui/core";
 
 const AvartarTextVertical = ({
@@ -30,4 +30,4 @@ const AvartarTextVertical = ({
   );
 };
 
-export default AvartarTextVertical;
+export default memo(AvartarTextVertical);

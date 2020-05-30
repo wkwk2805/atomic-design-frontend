@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import GridList from "@material-ui/core/GridList";
 import GridListTile from "@material-ui/core/GridListTile";
 import { GridListTileBar } from "@material-ui/core";
@@ -21,4 +21,4 @@ const ExploreBody = (/* { tileData } */) => {
   return <ListView tileData={tileData} windowSize={windowSize} />;
 };
 
-export default ExploreBody;
+export default memo(ExploreBody);

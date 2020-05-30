@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import ListView from "../../molecules/ListView";
 import AvartarTextVertical from "../../molecules/AvartarTextVertical";
 
@@ -26,4 +26,4 @@ const ProfileBody = () => {
   );
 };
 
-export default ProfileBody;
+export default memo(ProfileBody);

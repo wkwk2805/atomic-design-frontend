@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import SearchInput from "../../molecules/SearchInput";
 import { AppBar, Toolbar } from "@material-ui/core";
 
@@ -20,4 +20,4 @@ const ExploreHeader = () => {
   );
 };
 
-export default ExploreHeader;
+export default memo(ExploreHeader);

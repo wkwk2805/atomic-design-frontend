@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import FriendsHeader from "../organisms/friends/FriendsHeader";
 import FriendsBody from "../organisms/friends/FriendsBody";
 
@@ -11,4 +11,4 @@ const Friends = () => {
   );
 };
 
-export default Friends;
+export default memo(Friends);

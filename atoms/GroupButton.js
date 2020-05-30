@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { IconButton } from "@material-ui/core";
 import { Group } from "@material-ui/icons";
 
@@ -10,4 +10,4 @@ const GroupButton = (props) => {
   );
 };
 
-export default GroupButton;
+export default memo(GroupButton);

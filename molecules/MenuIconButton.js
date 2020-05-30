@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import IconButton from "@material-ui/core/IconButton";
 import Menu from "@material-ui/core/Menu";
 import MenuItem from "@material-ui/core/MenuItem";
@@ -32,4 +32,4 @@ const MenuIconButton = ({
     </>
   );
 };
-export default MenuIconButton;
+export default memo(MenuIconButton);

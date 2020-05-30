@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import { GridList, GridListTile, GridListTileBar } from "@material-ui/core";
 import { VideocamOutlined, CropOriginal } from "@material-ui/icons";
 
@@ -49,4 +49,4 @@ const ListView = ({ tileData, windowSize }) => {
   );
 };
 
-export default ListView;
+export default memo(ListView);

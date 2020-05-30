@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import PostHeader from "../organisms/post/PostHeader";
 import PostBody from "../organisms/post/PostBody";
 
@@ -11,4 +11,4 @@ const Post = () => {
   );
 };
 
-export default Post;
+export default memo(Post);

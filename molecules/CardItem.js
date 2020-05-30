@@ -1,7 +1,7 @@
 import React, { memo } from "react";
 
-const groups = () => {
+const CardItem = () => {
   return <div></div>;
 };
 
-export default memo(groups);
+export default memo(CardItem);

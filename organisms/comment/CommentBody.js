@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import AvartarText from "../../molecules/AvartarText";
 import LikeButton from "../../atoms/LikeButton";
 import { Button } from "@material-ui/core";
@@ -26,4 +26,4 @@ const CommentBody = () => {
   );
 };
 
-export default CommentBody;
+export default memo(CommentBody);
